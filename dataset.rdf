@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:book="http://example.org/book/">
+
+    <book:fiction rdf:about="https://dbpedia.org/page/My_Hero_is_You">
+        <book:number>1</book:number>
+        <book:image>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586515020i/53100533._UY630_SR1200,630_.jpg</book:image>
+        <rdfs:label>My Hero is You</rdfs:label>
+        <book:summary>
+        My Hero is You is a children's storybook developed by the Inter-Agency Standing Committee (IASC) Reference Group on Mental Health and Psychosocial Support in Emergency Settings (IASC MHPSS RG). The storybook aims to support young children in coping with stressors and worries related to COVID-19. The World Health Organization officially launched the book on April 9, 2020. The book is freely available and can be accessed online.
+        </book:summary>
+        <book:author>Helen Patuck</book:author>
+        <book:year>2020</book:year>
+        <book:page>22</book:page>
+        <book:isbn>CC BY-NC-SA 4.0</book:isbn>
+        <book:publisher>Inter-Agency Standing Committee</book:publisher>
+        <book:country></book:country>
+        <foaf:homepage rdf:resource="https://www.librarything.com/work/25022287"/>
+    </book:fiction>
+
+    <book:nonfiction rdf:about="https://dbpedia.org/page/Women_Who_Work_(book)">
+        <book:number>2</book:number>
+        <book:image>https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1484058286i/30814745.jpg</book:image>
+        <rdfs:label>Women Who Work</rdfs:label>
+        <book:summary>
+        Women Who Work is a 2017 book by Ivanka Trump. A self-help book intended to help women achieve self-actualization, it deals with work–life balance among other topics. It includes guest essays, and several businesspeople, political figures, and self-help authors are quoted. This book is often viewed as satire due to the fact that Ivanka Trump's curriculum vitae is lacking in workplace experience separate and apart from that of her father, Donald J Trump, the former President of the United States.
+        </book:summary>
+        <book:author>Ivanka Trump</book:author>
+        <book:year>2017</book:year>
+        <book:page>243</book:page>
+        <book:isbn>978-0-7352-1132-2</book:isbn>
+        <book:publisher>Penguin Group</book:publisher>
+        <book:country>United States</book:country>
+        <foaf:homepage rdf:resource="https://www.librarything.com/work/19496598"/>
+    </book:nonfiction>
+
+    <book:nonfiction rdf:about="https://dbpedia.org/page/The_Myth_of_Mental_Illness">
+        <book:number>3</book:number>
+        <book:image>https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1347569090i/706525.jpg</book:image>
+        <rdfs:label>The Myth of Mental Illness: Foundations of a Theory of Personal Conduct</rdfs:label>
+        <book:summary>
+        The Myth of Mental Illness: Foundations of a Theory of Personal Conduct is a 1961 book by the psychiatrist Thomas Szasz, in which the author criticizes psychiatry and argues against the concept of mental illness. It received much publicity, and has become a classic, well known as an argument that "mentally ill" is a label which psychiatrists have used against people "disabled by living" rather than truly having a disease.
+        </book:summary>
+        <book:author>Thomas Szasz</book:author>
+        <book:year>1961</book:year>
+        <book:page>337</book:page>
+        <book:isbn>0-06-091151-4</book:isbn>
+        <book:publisher>Harper &amp; Row</book:publisher>
+        <book:country>United States</book:country>
+        <foaf:homepage rdf:resource="https://www.librarything.com/work/104757"/>
+    </book:nonfiction>
+
+
+    <book:nonfiction rdf:about="http://dbpedia.org/resource/Existential_Psychotherapy_(book)">
+        <book:number>4</book:number>
+        <book:image>https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388363259i/21032.jpg</book:image>
+        <rdfs:label>Existential Psychotherapy</rdfs:label>
+        <book:summary>
+        Existential Psychotherapy is a book about existential psychotherapy by the American psychiatrist Irvin D. Yalom, in which the author, addressing clinical practitioners, offers a brief and pragmatic introduction to European existential philosophy, as well as to existential approaches to psychotherapy. He presents his four ultimate concerns of life—death, freedom, isolation, and meaninglessness—and discusses developmental changes, psychopathology and psychotherapeutic strategies with regard to these four concerns. This work is considered to be among Yalom's most influential books, as is his groundbreaking textbook on group therapy The Theory and Practice of Group Psychotherapy (1970).
+        </book:summary>
+        <book:author>Irvin D. Yalom</book:author>
+        <book:year>1980</book:year>
+        <book:page>544</book:page>
+        <book:isbn>978-0-465-02147-5</book:isbn>
+        <book:publisher>Basic Books</book:publisher>
+        <book:country>United States</book:country>
+        <foaf:homepage rdf:resource="https://www.librarything.com/work/133080"/>
+    </book:nonfiction>
+
+    <book:nonfiction rdf:about="http://dbpedia.org/resource/Think_and_Grow_Rich">
+        <book:number>5</book:number>
+        <book:image>https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1463241782i/30186948.jpg</book:image>
+        <rdfs:label>Think and Grow Rich</rdfs:label>
+        <book:summary>
+        Think and Grow Rich is a book written by Napoleon Hill in 1937 and promoted as a personal development and self-improvement book. He claimed to be inspired by a suggestion from business magnate and later-philanthropist Andrew Carnegie. First published during the Great Depression, the book has sold more than 15 million copies It remains the biggest seller of Napoleon Hill's books. BusinessWeek magazine's Best-Seller List ranked it the sixth best-selling paperback business book 70 years after it was published. Think and Grow Rich is listed in John C. Maxwell's A Lifetime "Must Read" Books List. While the book's title and much of the writing concerns increasing income, the author proclaims that his philosophy can help people succeed in any line of work, to do and be anything they can imagine. Think and Grow Rich is based on Hill's earlier work The Law of Success, and is the result of more than twenty years of study of many individuals who had amassed personal fortunes. Hill studied their habits and drew some 16 "laws" to be applied to achieve success. Think and Grow Rich condenses them, providing the reader with 14 principles in the form of a "Philosophy of Achievement".
+        </book:summary>
+        <book:author>Napoleon Hill</book:author>
+        <book:year>1937</book:year>
+        <book:page>238</book:page>
+        <book:isbn>978-1-78844-102-5</book:isbn>
+        <book:publisher>The Ralston Society</book:publisher>
+        <book:country>United States</book:country>
+        <foaf:homepage rdf:resource="https://www.librarything.com/work/1995"/>
+    </book:nonfiction>
+
+    <book:nonfiction rdf:about="https://dbpedia.org/page/Winnen_of_Leren">
+        <book:number>6</book:number>
+        <book:image>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1544031828i/43153925._UY630_SR1200,630_.jpg</book:image>
+        <rdfs:label>Winnen of Leren</rdfs:label>
+        <book:summary>
+        Winnen of Leren (English: 'Winning or Learning') is the autobiography of Dutch author and mental health activist Noa Pothoven, which was published in November 2018.
+        </book:summary>
+        <book:author>Noa Pothoven</book:author>
+        <book:year>2018</book:year>
+        <book:page>373</book:page>
+        <book:isbn>9789402248234</book:isbn>
+        <book:publisher>Uitgeverij Boekscout</book:publisher>
+        <book:country>The Netherlands</book:country>
+        <foaf:homepage rdf:resource="https://www.librarything.com/work/25304468"/>
+    </book:nonfiction>
+
+    <book:nonfiction rdf:about="https://dbpedia.org/page/Believe_What_You_Like">
+        <book:number>7</book:number>
+        <book:image>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1567739210l/446026.jpg</book:image>
+        <rdfs:label>Believe What You Like</rdfs:label>
+        <book:summary>
+        Believe What You Like: What happened between the Scientologists and the National Association for Mental Health (Andre Deutsch Limited, 1973, ISBN 0-233-96375-8), written by the New Statesman director C. R. Hewitt under the pen name C. H. Rolph, details a public dispute between the Church of Scientology and the National Association for Mental Health (now known as Mind) in Britain.
+        </book:summary>
+        <book:author>C. R. Hewitt</book:author>
+        <book:year>1973</book:year>
+        <book:page>3175</book:page>
+        <book:isbn>0-233-96375-8</book:isbn>
+        <book:publisher>Andre Deutsch Limited</book:publisher>
+        <book:country>Great Britain</book:country>
+        <foaf:homepage rdf:resource="https://www.librarything.com/work/10436874"/>
+    </book:nonfiction>
+
+    <book:nonfiction rdf:about="https://dbpedia.org/page/Self-Efficacy_(book)">
+        <book:number>8</book:number>
+        <book:image>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1315792858l/882815.jpg</book:image>
+        <rdfs:label>Self-Efficacy</rdfs:label>
+        <book:summary>
+        Self-Efficacy: The Exercise of Control is a psychology book written by Albert Bandura in 1997 on self-efficacy, i.e. a person's belief in their own competence. The book addresses issues ranging from theoretical discussions to developmental analyses. Translations have been published in Chinese, French, Italian, and Korean. The book has been reviewed and discussed in several professional social science journals,and widely cited in the professional literatures of psychology, sociology, medicine, and management.
+        </book:summary>
+        <book:author>Albert Bandura</book:author>
+        <book:year>1997</book:year>
+        <book:page>604</book:page>
+        <book:isbn>978-0-7167-2850-4</book:isbn>
+        <book:publisher>W.H.Freeman and Company</book:publisher>
+        <book:country>United States</book:country>
+        <foaf:homepage rdf:resource="https://www.librarything.com/work/567889"/>
+    </book:nonfiction>
+
+    <book:nonfiction rdf:about="https://dbpedia.org/page/Motivation_and_Personality">
+        <book:number>9</book:number>
+        <book:image>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1499351746l/1297177._SY475_.jpg</book:image>
+        <rdfs:label>Motivation and Personality</rdfs:label>
+        <book:summary>
+        Motivation and Personality is a book on psychology by Abraham Maslow, first published in 1954. Maslow's work deals with the subject of the nature of human fulfillment and the significance of personal relationships, implementing a conceptualization of self-actualization. Underachievers have a need for social love and affection, but a self-actualized person has these "lower" needs gratified and is able to pursue his or her own path towards self-actualization. Maslow's book is perhaps the best known contemporary work on human needs. Maslow postulated a hierarchical pyramid of human needs stretching from basic physical needs at the bottom to spiritual or transcendental needs at the top. In Motivation and Personality, Maslow argues that, in order for individuals to thrive and excel, a health-fostering culture must be created. Maslow is among the psychological theorists who believe that when parents fail to provide a safe, nurturing environment, their children will develop deep feelings of insecurity. Maslow believes that well-being causes people to freely express their inherent potentials.</book:summary>
+        <book:author>Abraham Maslow</book:author>
+        <book:year>1954</book:year>
+        <book:page>411</book:page>
+        <book:isbn>978-0-06-041987-5</book:isbn>
+        <book:publisher>Harper &amp; Brothers</book:publisher>
+        <book:country>United States</book:country>
+        <foaf:homepage rdf:resource="https://www.librarything.com/work/528507"/>
+    </book:nonfiction>
+
+    <book:nonfiction rdf:about="https://dbpedia.org/page/The_Social_Animal_(Brooks_book)">
+        <book:number>10</book:number>
+        <book:image>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348711254l/9628743.jpg</book:image>
+        <rdfs:label>The Social Animal</rdfs:label>
+        <book:summary>
+        The Social Animal: The Hidden Sources of Love, Character, and Achievement is a non-fiction book by American journalist David Brooks, who is otherwise best known for his career with The New York Times. The book discusses what drives individual behavior and decision making. Brooks goes through various academic topics such as sociology, psychology, and biology and attempts to summarize various discoveries— such as brain development in early life. The book continually refers to two fictional characters 'Harold' and 'Erica', used by Brooks as examples of how people's emotional personality changes over time. The book has been a commercial success at least initially. It debuted at No. 1 on the New York Times bestseller list. It reached the No. 3 spot on the Publishers Weekly best-sellers list for non-fiction (as of April 3). The book has received a wide variety of reviews. Criticism came from Forbes.com, Salon.com, and The New York Times Book Review, while praise came from The Washington Times, Newsweek, and Kirkus Reviews. The book is also a favorite of the former British Prime Minister and Conservative Party leader, David Cameron.
+        </book:summary>
+        <book:author>David Brooks</book:author>
+        <book:year>2011</book:year>
+        <book:page>448</book:page>
+        <book:isbn>1-4000-6760-X</book:isbn>
+        <book:publisher>Publishers Weekly</book:publisher>
+        <book:country>United States</book:country>
+        <foaf:homepage rdf:resource="https://www.librarything.com/work/10430012"/>
+    </book:nonfiction>
+
+</rdf:RDF>
