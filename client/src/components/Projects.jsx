@@ -16,10 +16,22 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Kelompok 6",
-      description: "Tim Web Semantik",
+      title: "Vita Sariani",
+      description: "211402073",
+      job: "",
+      imgUrl: img4,
+    },
+    {
+      title: "Group 6",
+      description: "Web Semantik Team",
       job: "",
       imgUrl: img6,
+    },
+    {
+      title: "Triffine Laurensi Ginting",
+      description: "211402142",
+      job: "",
+      imgUrl: img5,
     },
     {
       title: "Ivandohan Samuel Siregar",
@@ -38,18 +50,6 @@ const Projects = () => {
       description: "211402100",
       job: "",
       imgUrl: img3,
-    },
-    {
-      title: "Vita Sariani",
-      description: "211402073",
-      job: "",
-      imgUrl: img4,
-    },
-    {
-      title: "Triffine Laurensi Ginting",
-      description: "211402142",
-      job: "",
-      imgUrl: img5,
     },
   ];
 
