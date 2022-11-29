@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import Table from 'react-bootstrap/Table';
 import { useEffect } from "react";
 import axios from "axios";
-
+import Map from "./Map";
 
 const ListBook = () => {
     const [books, setBooks] = useState([])
@@ -123,6 +123,9 @@ const ListBook = () => {
                                                 </tr>
                                             </tbody>
                                         </Table>
+                                    </Card.Body>
+                                    <Card.Body>
+                                        <Map />
                                     </Card.Body>
                                     <Button onClick={() => setISA(!isShowAuthor)} variant="primary">Hide</Button>
                                 </Card>
