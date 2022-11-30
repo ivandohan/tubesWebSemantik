@@ -1,8 +1,20 @@
+import Ratio from "react-bootstrap/Ratio"
 
 const Map = () => {
     return (
-        <div className="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16194.864790799016!2d98.64947954844442!3d3.568825205426523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303130281c753719%3A0xa5e504e3efda91cc!2sRumah%20Sakit%20Siti%20Hajar!5e0!3m2!1sid!2sid!4v1669198680846!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div style={{width: 800, height: "auto"}}>
+            <Ratio aspectRatio="16x9">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613507864!3d-6.194741395493371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sPT%20Kulkul%20Teknologi%20Internasional!5e0!3m2!1sen!2sid!4v1601138221085!5m2!1sen!2sid"
+                    width="600"
+                    height="450"
+                    frameBorder="0"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    aria-hidden="false"
+                    tabIndex="0"
+                />
+            </Ratio>
         </div>
     )
 }

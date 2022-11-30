@@ -74,6 +74,14 @@ input:focus, textarea:focus, select:focus {
 	}
 }
 
+.mapws {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
 p.success {
 	color: green;
 }

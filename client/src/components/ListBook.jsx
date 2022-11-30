@@ -6,13 +6,17 @@ import Table from 'react-bootstrap/Table';
 import { useEffect } from "react";
 import axios from "axios";
 import Map from "./Map";
+// import Map from "./SimpleMap"
 
 const ListBook = () => {
+
+    const googleMapApiKeys = "AIzaSyB6RaMTub7WgaD0y6IpLKmGDzEQIy6NjHY"
+
     const [books, setBooks] = useState([])
     const [detailBook, setDetailBook] = useState([])
-    const [isShowDetail, setISD] = useState(false);
-    const [isShowAuthor, setISA] = useState(false);
-    const [authorDetail, setAuthor] = useState([]);
+    const [isShowDetail, setISD] = useState(false)
+    const [isShowAuthor, setISA] = useState(false)
+    const [authorDetail, setAuthor] = useState([])
 
     const defaultProps = {
         center: {lat: 59.95, lng: 30.33},
@@ -95,7 +99,7 @@ const ListBook = () => {
                                 </Col>
                                 :
                             authorDetail.map((detail) => (
-                                <Col size={12} sm={12} className="mt-2">
+                                <Col size={12} sm={12} className="mt-2" key={detail["name"]["value"]}>
                                 <Card className="bg-dark">
                                     <Card.Header>Details</Card.Header>
                                     <Card.Body>
@@ -121,10 +125,21 @@ const ListBook = () => {
                                                     <td>Bio</td>
                                                     <td>{detail["bio"]["value"]}</td>
                                                 </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Latitude</td>
+                                                    <td>{detail["lat"]["value"]}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Longitude</td>
+                                                    <td>{detail["long"]["value"]}</td>
+                                                </tr>
                                             </tbody>
                                         </Table>
                                     </Card.Body>
-                                    <Card.Body>
+                                    {/* For map */}
+                                    <Card.Body className="mapws">
                                         <Map />
                                     </Card.Body>
                                     <Button onClick={() => setISA(!isShowAuthor)} variant="primary">Hide</Button>
@@ -137,7 +152,7 @@ const ListBook = () => {
                         {(!isShowDetail) ? 
                             books.map((book) => (
                                 <>
-                                    <Col size={12} sm={3} className="mt-2 ">
+                                    <Col size={12} sm={3} className="mt-2 " key={book["no"]["value"]}>
                                         <Card style={{ width: '18rem' }} className="bg-dark justify-content-center align-items-center">
                                             <Card.Img style={{width: '250px', height: '250px'}} variant="top" src={book["image"]["value"]} className="px-2 mt-3"/>
                                             <Card.Body>
@@ -157,7 +172,7 @@ const ListBook = () => {
                             ))
                             :
                             detailBook.map((detail) => (
-                                <Col size={12} sm={12} className="mt-2">
+                                <Col size={12} sm={12} className="mt-2" key={detail["title"]["value"]}>
                                     <Card className="bg-dark">
                                         <Card.Header>Details</Card.Header>
                                         <Card.Body>
