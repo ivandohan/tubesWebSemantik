@@ -62,7 +62,7 @@ const Banner = () => {
                     Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood.
                   </p>
                   <Link to={`/mental-health`} style={{textDecoration: 'none'}}>
-                    <button>Explore more... <ArrowRightCircle size={25} /></button>
+                    <button>More about mental health... <ArrowRightCircle size={25} /></button>
                   </Link>
               </div>}
             </TrackVisibility>
