@@ -11,6 +11,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from 'react-on-screen';
 import SearchBook from "./SearchBook";
 import ListBook from "./ListBook";
+import CarouselStat from "./CarouselStat";
 
 const Projects = () => {
 
@@ -57,6 +58,17 @@ const Projects = () => {
     <section className="project" id="projects">
       <Container>
         <Row>
+          <Col size={12}>
+            <h2>Statistics</h2>
+            <p>Here is app data statistics.</p>
+          </Col>
+        </Row>
+        <Row>    
+          <Col size={12}>
+            <CarouselStat />
+          </Col>
+        </Row>
+        <Row style={{'margin-top': 100}}>
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>

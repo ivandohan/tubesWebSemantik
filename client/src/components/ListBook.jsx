@@ -6,6 +6,7 @@ import Table from 'react-bootstrap/Table';
 import { useEffect } from "react";
 import axios from "axios";
 import Map from "./Map";
+import {Link} from "react-router-dom";
 // import Map from "./MapLeafe";
 // import Map from "./SimpleMap"
 
@@ -100,7 +101,7 @@ const ListBook = () => {
                                 </Col>
                                 :
                             authorDetail.map((detail) => (
-                                <Col size={12} sm={12} className="mt-2" key={detail["name"]["value"]}>
+                            <Col size={12} sm={12} className="mt-2" key={detail["name"]["value"]}>
                                 <Card className="bg-dark">
                                     <Card.Header>Details</Card.Header>
                                     <Card.Body>
@@ -162,7 +163,9 @@ const ListBook = () => {
                                 <>
                                     <Col size={12} sm={3} className="mt-2 " key={book["no"]["value"]}>
                                         <Card style={{ width: '18rem' }} className="bg-dark justify-content-center align-items-center">
-                                            <Card.Img style={{width: '250px', height: '250px'}} variant="top" src={book["image"]["value"]} className="px-2 mt-3"/>
+                                            <a href={book["link"]["value"]}>
+                                                <Card.Img style={{width: '250px', height: '250px'}} variant="top" src={book["image"]["value"]} className="px-2 mt-3"/>
+                                            </a>
                                             <Card.Body>
                                                 <Card.Title>{book["title"]["value"]}</Card.Title>
                                                 <Card.Text>
@@ -187,7 +190,9 @@ const ListBook = () => {
                                             <Card.Title>{detail["title"]["value"]}</Card.Title>
                                         </Card.Body>
                                         <Card.Body>
-                                            <Card.Img style={{width: '350px', height: '350px'}} variant="top" src={detail["image"]["value"]} className="px-2 mt-3"/>
+                                            <a href={detail["link"]["value"]}>
+                                                <Card.Img style={{width: '350px', height: '350px'}} variant="top" src={detail["image"]["value"]} className="px-2 mt-3"/>
+                                            </a>
                                         </Card.Body>
                                         <Card.Body>
                                             <Table striped bordered hover variant="dark">

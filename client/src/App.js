@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar"
 import Banner from "./components/Banner"
 import Projects from "./components/Projects"
 import MentalHealth from './components/MentalHealth'
+import Skills from "./components/Skills"
 import Footer from "./components/Footer"
 import {
   createBrowserRouter,
