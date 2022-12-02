@@ -12,9 +12,11 @@ const MentalHealth = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
+  const [text2, setText2] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Mental Health" , "Motivation" ];
+  const toRotate = [ "Mental Health" ];
+  const toRotate2 = [ "Motivation" ];
   const period = 2000;
 
   useEffect(() => {
@@ -30,7 +32,11 @@ const MentalHealth = () => {
     let fullText = toRotate[i];
     let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
 
+    let fullText2 = toRotate2[i];
+    let updatedText2 = isDeleting ? fullText2.substring(0, text.length - 1) : fullText2.substring(0, text.length + 1);
+
     setText(updatedText);
+    setText2(updatedText2);
 
     if (isDeleting) {
       setDelta(prevDelta => prevDelta / 2);
@@ -62,7 +68,15 @@ const MentalHealth = () => {
             </Col>
         </Row>
         <Row className="align-items-center" style={{'margin-top': 70}}>
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={4} xl={5}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                  <img src={WhatIsImg} alt="Header Img" style={{width: 480}}/>
+                </div>}
+            </TrackVisibility>
+          </Col>
+          <Col xs={12} md={4} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
@@ -72,14 +86,6 @@ const MentalHealth = () => {
                 A person who has sound mind is able to adapt itself to the changes in the life. His mind has the capability to withstand stress and does not go off the balance. His mental strength keeps him solid and unshaken amidst adversities and challenges in life. Mental health also plays a critical role in maintaining the health of your relationships.
                 </p>
               </div>}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={WhatIsImg} alt="Header Img" style={{width: 480}}/>
-                </div>}
             </TrackVisibility>
           </Col>
         </Row>
@@ -96,7 +102,7 @@ const MentalHealth = () => {
               </div>}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+          <Col xs={12} md={4} xl={4}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
@@ -106,6 +112,14 @@ const MentalHealth = () => {
           </Col>
         </Row>
         <Row className="align-items-center" style={{'margin-top': 100}}>
+            <Col xs={12} md={6} xl={5}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                  <img src={HowToMaintain} alt="Header Img" style={{width: 480}}/>
+                </div>}
+            </TrackVisibility>
+          </Col>
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
@@ -128,11 +142,51 @@ const MentalHealth = () => {
               </div>}
             </TrackVisibility>
           </Col>
-          <Col xs={12} md={6} xl={5}>
+        </Row>
+
+        <Row className="align-items-center" style={{"margin-top": 100}}>
+            <Col>
+                <h1><span className="txt-rotate" dataPeriod="1000"><span className="wrap">{text2}</span></span></h1>
+            </Col>
+        </Row>
+
+        <Row className="align-items-center" style={{'margin-top': 70}}>
+          <Col xs={12} md={4} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={HowToMaintain} alt="Header Img" style={{width: 480}}/>
+                  <img src={WhatIsImg} alt="Header Img" style={{width: 480}}/>
+                </div>}
+            </TrackVisibility>
+          </Col>
+          <Col xs={12} md={4} xl={7}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <span className="tagline">What is Motivation?</span>
+                <p>
+                    Motivation describes why a person does something. It is the driving force behind human actions. Motivation is the process that initiates, guides, and maintains goal-oriented behaviors.
+                    For instance, motivation is what helps you lose extra weight, or pushes you to get that promotion at work. In short, motivation causes you to act in a way that gets you closer to your goals. Motivation includes the biological, emotional, social, and cognitive forces that activate human behavior.                </p>
+              </div>}
+            </TrackVisibility>
+          </Col>
+        </Row>
+        <Row className="align-items-center" style={{'margin-top': 100}}>
+          <Col xs={12} md={6} xl={7}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <span className="tagline">Why Motivation is Important?</span>
+                <p>
+                    Motivation serves as a guiding force for all human behavior. So, understanding how motivation works and the factors that may impact it can be important for several reasons.  Understanding motivation can Increase your efficiency as you work toward your goals, Drive you to take action, Encourage you to engage in health-oriented behaviors, Help you avoid unhealthy or maladaptive behaviors, such as risk-taking and addiction, Help you feel more in control of your life, and also Improve your overall well-being and happiness                </p>
+              </div>}
+            </TrackVisibility>
+          </Col>
+          <Col xs={12} md={4} xl={4}>
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                  <img src={HowImportant} alt="Header Img" style={{width: 480}}/>
                 </div>}
             </TrackVisibility>
           </Col>
