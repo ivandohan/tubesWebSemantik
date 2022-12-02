@@ -6,6 +6,7 @@ import Table from 'react-bootstrap/Table';
 import { useEffect } from "react";
 import axios from "axios";
 import Map from "./Map";
+// import Map from "./MapLeafe";
 // import Map from "./SimpleMap"
 
 const ListBook = () => {
@@ -139,9 +140,16 @@ const ListBook = () => {
                                         </Table>
                                     </Card.Body>
                                     {/* For map */}
-                                    <Card.Body className="mapws">
-                                        <Map />
-                                    </Card.Body>
+                                    {
+                                        detail["lat"]["value"] ? 
+                                        <Card.Body className="mapws">
+                                            <Map lat={detail["lat"]["value"]} lng={detail["long"]["value"]}/>
+                                        </Card.Body>
+                                        :
+                                        <Card.Body>
+                                            <p>Unknown geo location</p>
+                                        </Card.Body>
+                                    }
                                     <Button onClick={() => setISA(!isShowAuthor)} variant="primary">Hide</Button>
                                 </Card>
                             </Col>
