@@ -4,6 +4,7 @@ import controllers.listing as listing
 import controllers.search as search
 import controllers.details as details
 import controllers.authorDetails as authorDetails
+import controllers.statistic as stats
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -14,6 +15,11 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 @cross_origin()
 def data_records():
   return jsonify(listing.run_listing())
+
+@app.route('/api/books/stats', methods=['GET'])
+@cross_origin()
+def stats_records():
+  return jsonify(stats.run_stats())
 
 @app.route('/api/books/search', methods=['GET'])
 @cross_origin()

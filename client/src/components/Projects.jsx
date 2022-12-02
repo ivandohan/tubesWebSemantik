@@ -60,7 +60,7 @@ const Projects = () => {
         <Row>
           <Col size={12}>
             <h2>Statistics</h2>
-            <p>Here is app data statistics.</p>
+            <p>Here is the app data statistics.</p>
           </Col>
         </Row>
         <Row>    

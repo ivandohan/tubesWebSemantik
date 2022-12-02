@@ -6,6 +6,7 @@ import Table from 'react-bootstrap/Table';
 import { useEffect } from "react";
 import axios from "axios";
 import Map from "./Map";
+import AbrahamMas from "../assets/img/Abraham_Maslow.jpg";
 import {Link} from "react-router-dom";
 // import Map from "./MapLeafe";
 // import Map from "./SimpleMap"
@@ -106,6 +107,9 @@ const ListBook = () => {
                                     <Card.Header>Details</Card.Header>
                                     <Card.Body>
                                         <Card.Title>{detail["name"]["value"]}</Card.Title>
+                                    </Card.Body>
+                                    <Card.Body>
+                                        <img src={AbrahamMas} style={{width: 200, height: 200}}/>
                                     </Card.Body>
                                     <Card.Body>
                                         <Table striped bordered hover variant="dark">
