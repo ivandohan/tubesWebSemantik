@@ -5,7 +5,7 @@ import img2 from "../assets/img/johansen.jpeg";
 import img3 from "../assets/img/member3.jpg";
 import img4 from "../assets/img/vita.jpeg";
 import img5 from "../assets/img/triffine.jpeg";
-import img6 from "../assets/img/member6.jpg";
+import img6 from "../assets/img/tim.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 // import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -23,12 +23,12 @@ const Projects = () => {
     },
     {
       title: "Group 6",
-      description: "Web Semantik Team",
+      description: "Semantic Web Team",
       job: "",
       imgUrl: img6,
     },
     {
-      title: "Triffine Laurensi Ginting",
+      title: "Trifine Laurensi Ginting",
       description: "211402142",
       job: "",
       imgUrl: img5,

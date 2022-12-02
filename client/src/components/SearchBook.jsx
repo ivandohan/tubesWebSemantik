@@ -5,9 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Table from 'react-bootstrap/Table';
 import axios from 'axios'
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-import { Bookshelf } from "react-bootstrap-icons";
+import Map from "./Map"
 
 const SearchBook = () => {
     const [keyword, setKeyword] = useState("");
@@ -148,6 +146,16 @@ const SearchBook = () => {
                                                 </tbody>
                                             </Table>
                                         </Card.Body>
+                                        {
+                                            detail["lat"]["value"] ? 
+                                            <Card.Body className="mapws">
+                                                <Map lat={detail["lat"]["value"]} lng={detail["long"]["value"]}/>
+                                            </Card.Body>
+                                            :
+                                            <Card.Body>
+                                                <p>Unknown geo location</p>
+                                            </Card.Body>
+                                        }
                                         <Button onClick={() => setISA(!isShowAuthor)} variant="primary">Hide</Button>
                                     </Card>
                                 </Col>
