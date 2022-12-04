@@ -13,17 +13,17 @@ def set_up_query(url, keyword):
         PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 
         SELECT distinct  ?bio ?geo ?name ?wikilink ?country ?lat ?long where {
-            dbr:"""+ new_key + """ a ?x;
-            foaf:name ?name;
-            rdfs:label ?label;
-            foaf:isPrimaryTopicOf ?wikilink;
-            dbo:abstract ?bio;
-            dbo:birthPlace ?geo.
-            ?geo rdfs:label ?country.
-            ?geo geo:lat ?lat.
-            ?geo geo:long ?long.
-            FILTER (?x IN (dbo:Writer, dbo:Person, dbo:Scientist, dbo:Author, dbo:ilustrator)).
-            FILTER(lang(?bio) = "en" && lang(?country) = "en").
+        dbr:"""+ new_key + """ a dbo:Person;
+        rdfs:label ?name;
+        dbo:abstract ?bio.
+        OPTIONAL {
+        dbr:"""+ new_key + """ foaf:isPrimaryTopicOf ?wikilink;
+        dbo:birthPlace ?geo.
+        ?geo rdfs:label ?country.
+        ?geo geo:lat ?lat.
+        ?geo geo:long ?long. }.
+        FILTER (lang(?bio) = "en").
+        FILTER (lang(?name) = "en").
         } LIMIT 1
     """
     # print(q)
