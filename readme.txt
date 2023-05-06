@@ -7,3 +7,5 @@ Pastikan sudah memiliki compiler python terbaru dan aplikasi jena fuseki.
 3. Masuk ke folder api kemudian run command "pip install flask flask-cors sparqlwrapper"
 4. Masuk ke folder client kemudian run command "npm install" dan "npm start"
 5. Done
+
+OKOK
