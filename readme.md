@@ -2,12 +2,18 @@
 
 ## Note
 `Package Client` project masih hasil konversi mentah dari figma ke react.
-Modularisasi project masih buruk, tapi sudah dapat dijalankan.
+Modularisasi project masih buruk, tapi berjalan dengan baik.
 `client` dibuat dengan reactjs, `api server` dibuat dengan python (Flask).
+
+## Related Libraries
+1. [Python - Flask](https://flask.palletsprojects.com/en/3.0.x/)
+2. [Python - SPARQLWrapper](https://sparqlwrapper.readthedocs.io/en/latest/)
+3. [ReactJS - Default + Axios]()
 
 ## Pre-requirements :
 1. Apache Jena Fuseki
 2. Python Compiler
+3. NodeJS
 
 ## Setup project
 1. Buat dataset pada jena fuseki dengan nama "data_bukuu"
