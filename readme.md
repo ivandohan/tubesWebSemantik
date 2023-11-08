@@ -1,7 +1,7 @@
 # Kelompok 6
 
 ## Note
-`Package Client` project masih hasil konversi mentah dari figma ke react.
+`Package Client` project masih berupa hasil konversi mentah dari figma ke react.
 Modularisasi project masih buruk, tapi berjalan dengan baik.
 `client` dibuat dengan reactjs, `api server` dibuat dengan python (Flask).
 
